@@ -1,0 +1,222 @@
+!SESSION 2022-11-03 11:42:14.279 -----------------------------------------------
+eclipse.buildId=4.24.0.I20220607-0700
+java.version=17.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-11-03 11:42:45.706
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-11-03 11:42:45.706
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3507200d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4db10b9f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-11-03 11:42:45.706
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7c4de811,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@443b9ebb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.debug.ui 4 0 2022-11-03 11:53:24.845
+!MESSAGE Launch shortcut 'org.eclipse.jdt.junit.junitShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.jdt.junit.canLaunchAsJUnit, type=class org.eclipse.jdt.internal.core.CompilationUnit, tester=org.eclipse.jdt.internal.junit.JUnitPropertyTester@1501b99a]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.AndExpression.evaluate(AndExpression.java:36)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:121)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:283)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:214)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:137)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5794)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1316)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1191)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1171)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$7(ActionContributionItem.java:1134)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5794)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1534)
+	at org.eclipse.swt.widgets.Menu.gtk_show(Menu.java:861)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2397)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6108)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4474)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+Caused by: org.eclipse.jdt.internal.compiler.problem.AbortCompilation: Pb(324) The type java.lang.annotation.ElementType cannot be resolved. It is indirectly referenced from required .class files
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:162)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:229)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.handle(ProblemReporter.java:2684)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.isClassPathCorrect(ProblemReporter.java:5155)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:123)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:248)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getType(LookupEnvironment.java:1739)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getResolvedType(LookupEnvironment.java:1662)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getResolvedType(LookupEnvironment.java:1657)
+	at org.eclipse.jdt.internal.compiler.lookup.AnnotationBinding.buildTargetAnnotation(AnnotationBinding.java:174)
+	at org.eclipse.jdt.internal.compiler.lookup.AnnotationBinding.addStandardAnnotations(AnnotationBinding.java:83)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.retrieveAnnotations(BinaryTypeBinding.java:1917)
+	at org.eclipse.jdt.internal.compiler.lookup.ReferenceBinding.getAnnotations(ReferenceBinding.java:1073)
+	at org.eclipse.jdt.core.dom.TypeBinding.getAnnotations(TypeBinding.java:122)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder$Annotation.matchesNameInAnnotationHierarchy(JUnit5TestFinder.java:185)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder$Annotation.annotates(JUnit5TestFinder.java:164)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder$Annotation.annotatesTypeOrSuperTypes(JUnit5TestFinder.java:115)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder.isTest(JUnit5TestFinder.java:305)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder.internalIsTest(JUnit5TestFinder.java:284)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder.isTest(JUnit5TestFinder.java:255)
+	at org.eclipse.jdt.internal.junit.util.CoreTestSearchEngine.isTestOrTestSuite(CoreTestSearchEngine.java:60)
+	at org.eclipse.jdt.internal.junit.JUnitPropertyTester.isJUnitTest(JUnitPropertyTester.java:122)
+	at org.eclipse.jdt.internal.junit.JUnitPropertyTester.canLaunchAsJUnitTest(JUnitPropertyTester.java:88)
+	at org.eclipse.jdt.internal.junit.JUnitPropertyTester.test(JUnitPropertyTester.java:72)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 57 more
+!SUBENTRY 1 org.eclipse.core.expressions 4 0 2022-11-03 11:53:24.846
+!MESSAGE Error evaluating Property [org.eclipse.jdt.junit.canLaunchAsJUnit, type=class org.eclipse.jdt.internal.core.CompilationUnit, tester=org.eclipse.jdt.internal.junit.JUnitPropertyTester@1501b99a]
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: Pb(324) The type java.lang.annotation.ElementType cannot be resolved. It is indirectly referenced from required .class files
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:162)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:229)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.handle(ProblemReporter.java:2684)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.isClassPathCorrect(ProblemReporter.java:5155)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:123)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:248)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getType(LookupEnvironment.java:1739)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getResolvedType(LookupEnvironment.java:1662)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getResolvedType(LookupEnvironment.java:1657)
+	at org.eclipse.jdt.internal.compiler.lookup.AnnotationBinding.buildTargetAnnotation(AnnotationBinding.java:174)
+	at org.eclipse.jdt.internal.compiler.lookup.AnnotationBinding.addStandardAnnotations(AnnotationBinding.java:83)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.retrieveAnnotations(BinaryTypeBinding.java:1917)
+	at org.eclipse.jdt.internal.compiler.lookup.ReferenceBinding.getAnnotations(ReferenceBinding.java:1073)
+	at org.eclipse.jdt.core.dom.TypeBinding.getAnnotations(TypeBinding.java:122)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder$Annotation.matchesNameInAnnotationHierarchy(JUnit5TestFinder.java:185)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder$Annotation.annotates(JUnit5TestFinder.java:164)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder$Annotation.annotatesTypeOrSuperTypes(JUnit5TestFinder.java:115)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder.isTest(JUnit5TestFinder.java:305)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder.internalIsTest(JUnit5TestFinder.java:284)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder.isTest(JUnit5TestFinder.java:255)
+	at org.eclipse.jdt.internal.junit.util.CoreTestSearchEngine.isTestOrTestSuite(CoreTestSearchEngine.java:60)
+	at org.eclipse.jdt.internal.junit.JUnitPropertyTester.isJUnitTest(JUnitPropertyTester.java:122)
+	at org.eclipse.jdt.internal.junit.JUnitPropertyTester.canLaunchAsJUnitTest(JUnitPropertyTester.java:88)
+	at org.eclipse.jdt.internal.junit.JUnitPropertyTester.test(JUnitPropertyTester.java:72)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.AndExpression.evaluate(AndExpression.java:36)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:121)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:283)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:214)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:137)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5794)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1538)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1316)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1191)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1171)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$7(ActionContributionItem.java:1134)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5794)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1555)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1534)
+	at org.eclipse.swt.widgets.Menu.gtk_show(Menu.java:861)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2397)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6108)
+	at org.eclipse.swt.internal.gtk3.GTK3.gtk_main_iteration_do(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4474)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
